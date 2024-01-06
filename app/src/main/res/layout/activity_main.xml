@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CCD1D1"
+    android:padding="16dp"
+    tools:context="com.stopwatch.MainActivity">
+
+    <TextView
+        android:id="@+id/time_view"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.CardView"
+        android:textSize="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickStart"
+            android:padding="15dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:text="@string/start" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="50dp"
+            android:onClick="onClickReset"
+            android:padding="15dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:text="@string/reset" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickStop"
+            android:padding="15dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:text="@string/stop" />
+    </LinearLayout>
+</LinearLayout>
